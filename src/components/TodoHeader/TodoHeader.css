@@ -1,0 +1,27 @@
+.todo-counter {
+    color: #fff;
+    margin: 20px auto;
+    text-align: center;
+}
+.todo-counter h1{
+    background-color: #fff;
+    color: #000;
+    font-family: Press Start\ 2P,cursive;
+    margin: 30px auto;
+    padding: 5%;
+     width: 90%;
+    font-size: 50px;
+    line-height: 65px;
+    -webkit-box-shadow: 3px 5px 22px -8px rgb(18 18 18);
+    -moz-box-shadow: 3px 5px 22px -8px rgb(18 18 18);
+    box-shadow: 3px 5px 22px -8px rgb(18 18 18);
+}
+.todo-counter h2{
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 40px auto;
+    text-align: center;
+}
+.todo-counter span{
+    font-size: 2rem;
+}
