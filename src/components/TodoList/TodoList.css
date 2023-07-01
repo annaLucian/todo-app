@@ -1,0 +1,68 @@
+
+.search-container-result{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.search-container-result svg{
+    font-size: 1.5rem;
+    line-height: 0px;
+}
+.search-result{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+/* todolist container*/
+.todo-list-container{
+    height: 250px;
+    overflow-y: scroll;
+    width: 70%;
+    margin: auto;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.todo-item{
+    background: #fff;
+    border: 3px solid #000;
+    border-radius: 10px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 0 rgba(0,0,0,.2);
+    color: #000;
+    display: flex;
+    font-weight: 700;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    padding: 1.6rem 3rem;
+    width: 90%;
+}
+.todo-item-icon{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: gray;
+}
+.todo-item-p{
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 400px;
+    line-height: 24px;
+}
+.todo-item--complete{
+    text-decoration: line-through;
+}
+.icon-check{
+    color: rgb(90, 220, 90);
+    transition: .5s all ease;
+}
+.icon-delete{
+    transition: .2s all ease;
+}
+.icon-delete:hover{
+    color: red;
+}

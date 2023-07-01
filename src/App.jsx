@@ -17,16 +17,40 @@ function App() {
 
   const [searchInput, setSearchInput] = useState("")
 
+
   const filteredArrayValueInput = todoItems.filter((todo) => todo.title.toLowerCase().includes(searchInput.toLowerCase()))
 
   const completedTodosLength = todoItems.filter((todo) => todo.completed).length
+
+  // crear function que tome ese id
+  // filtrar array de acuerdo a ese id
+  // lpintar los todos con la modificacion
+  function onToggleCompleted(todo) {
+    setTodoItems((todoItems) => {
+      return todoItems.map(t => {
+        return t.id === todo.id ? { ...todo, completed: !todo.completed } : t
+      })
+    })
+  }
+
+  function deleteTodo(todo) {
+    const filteredTodo = todoItems.filter(el => {
+      return el.id !== todo.id
+    })
+    setTodoItems(filteredTodo)
+  }
 
   return (
     <div className='App'>
       <TodoHeader count={completedTodosLength} todoItems={todoItems} >
         <TodoSearch setSearchInput={setSearchInput} />
       </TodoHeader>
-      <TodoList filteredArrayValueInput={filteredArrayValueInput} />
+      <TodoList
+        filteredArrayValueInput={filteredArrayValueInput}
+        valueInput={searchInput}
+        onToggleCompleted={onToggleCompleted}
+        deleteTodo={deleteTodo}
+      />
     </div>
   )
 }

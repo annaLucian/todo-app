@@ -5,7 +5,9 @@ const TodoSearch = ({ setSearchInput }) => {
     // { title: "Cortar cebolla", id: 1, completed: true }
     // todo.title coincida con el input
     const handleOnChange = (event) => {
+
         setSearchInput(event.target.value)
+
     }
 
     return (
