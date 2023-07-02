@@ -25,3 +25,6 @@
 .todo-counter span{
     font-size: 2rem;
 }
+.text-opacity{
+    opacity: .5;
+}

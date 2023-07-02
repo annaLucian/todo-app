@@ -1,0 +1,86 @@
+.modal{
+    display: none;
+}
+.is-visible{
+    display: block;
+}
+
+.modal-background{
+    align-items: center;
+    display: flex;
+    background: rgba(32,35,41,75%);
+    bottom: -10px;
+    justify-content: center;
+    left: -10px;
+    position: fixed;
+    right: -10px;
+    top: -10px;
+}
+form{
+    width: 25%;
+    background-color: #fff;
+    border: 3px solid #000;
+    border-radius: 5px;
+    box-shadow: 8px 8px 0 rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    gap: 20px;
+    padding: 1.6rem 6rem;
+
+}
+.modal-description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.modal-description label{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+}
+textarea{
+    height: 120px;
+    border: 2px solid #63d1fd;
+    font-size: 18px;
+}
+textarea:focus-visible{
+    outline: none;
+    border: 2px solid #429bbe;
+}
+.from-btn-container{
+    display: flex;
+    justify-content: center;
+}
+button{
+    border-radius: 8px;
+    box-shadow: 4px 4px 0 #094c66;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 10px calc(40% - 40px);
+    padding: 10px 15px;
+    transition: transform .2s,box-shadow .2s;
+    width: 100px;
+    transform: .5s all ease;
+    z-index: 1; 
+}
+.todo-form-btn--add{
+    background-color: #adff2f;
+}
+.todo-form-btn--cancel{
+    background-color: plum;
+}
+.error-modal{
+    display: none;
+    
+}
+.error-modal-visible{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    line-height: 0;
+}

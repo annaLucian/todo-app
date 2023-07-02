@@ -1,0 +1,17 @@
+.todo-btn{
+    background-color: #1197cc;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0 #094c66;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 50px calc(50% - 50px);
+    padding: 10px;
+    transition: transform .2s,box-shadow .2s;
+    width: 100px;
+    transform: .5s all ease;
+    z-index: 1;
+}
+.todo-btn:hover{
+    scale: 1.1;
+}

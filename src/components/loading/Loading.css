@@ -1,0 +1,7 @@
+.container-loading{
+    display: flex;
+    justify-content: center;
+}
+.todo-esqueleton{
+    margin-left: 10px;
+}
